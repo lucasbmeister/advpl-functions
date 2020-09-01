@@ -1,14 +1,11 @@
 #include 'totvs.ch'
-//#include "dbstruct.ch"
 
-//-------------------------------------------------------------------
 /*/{Protheus.doc} Converte DTC anterior a versão em banco de dados para um compátivel
  Converte DTC anterior a versão em banco de dados para um compativel
 @author  Lucas Briesemeister
 @since   08/2020
 @version 12.1.27
 /*/
-//-------------------------------------------------------------------
 User Function X3Converter(cEmp, cFil, cFolder, cOriginal, cConverted)
 
     Local cAliasOriginal := "SX3CTREE"
