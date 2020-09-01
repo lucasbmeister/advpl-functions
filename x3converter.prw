@@ -2,8 +2,8 @@
 //#include "dbstruct.ch"
 
 //-------------------------------------------------------------------
-/*/{Protheus.doc} Converte DTC anterior a vers„o em banco de dados para um comp·tivel
- Converte DTC anterior a vers„o em banco de dados para um comp·tivel
+/*/{Protheus.doc} Converte DTC anterior a vers√£o em banco de dados para um comp√°tivel
+ Converte DTC anterior a vers√£o em banco de dados para um compativel
 @author  Lucas Briesemeister
 @since   08/2020
 @version 12.1.27
