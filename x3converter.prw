@@ -1,11 +1,12 @@
 #include 'totvs.ch'
 
-/*/{Protheus.doc} Converte DTC anterior a versão em banco de dados para um compátivel
+/*
+{Protheus.doc} Converte DTC anterior a versão em banco de dados para um compátivel
  Converte DTC anterior a versão em banco de dados para um compativel
 @author  Lucas Briesemeister
 @since   08/2020
 @version 12.1.27
-/*/
+*/
 User Function X3Converter(cEmp, cFil, cFolder, cOriginal, cConverted)
 
     Local cAliasOriginal := "SX3CTREE"
@@ -43,14 +44,13 @@ User Function X3Converter(cEmp, cFil, cFolder, cOriginal, cConverted)
 
 Return
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} AdjustStruct(aStruct)
+/*
+{Protheus.doc} AdjustStruct(aStruct)
 Compatibiliza SX3 com a atual do banco
 @author  Lucas Briesemeister
 @since   08/2020
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Static Function AdjustStruct(aStruct)
     Local aNewStruct as array 
     Local nX         as numeric
@@ -68,14 +68,14 @@ Static Function AdjustStruct(aStruct)
     Next nX
 
 Return aNewStruct
-//-------------------------------------------------------------------
-/*/{Protheus.doc} InsertLine(cAliasOriginal, cAliasConverted)
+
+/*
+{Protheus.doc} InsertLine(cAliasOriginal, cAliasConverted)
 Insere uma linha no alias novo, com base no antigo
 @author  Lucas Briesemeister
 @since   08/2020
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Static Function InsertLine(cAliasOriginal, cAliasConverted)
     
     Local aStruct := (cAliasOriginal)->(DBStruct())
@@ -96,14 +96,14 @@ Static Function InsertLine(cAliasOriginal, cAliasConverted)
         (cAliasConverted)->(MsUnlock())
     EndIf
 Return
-//-------------------------------------------------------------------
-/*/{Protheus.doc} GetSX3Field(cField)
+
+/*
+{Protheus.doc} GetSX3Field(cField)
 Retorna tamanho do campo da SX3
 @author  Lucas Briesemeister
 @since   08/2020
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Static Function GetSX3Field(cField)
 
     Local aField  := {}
